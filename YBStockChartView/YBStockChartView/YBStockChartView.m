@@ -621,7 +621,6 @@ typedef NS_ENUM(NSInteger, YBStockState){
         self.lastPinCount = self.countOfShowCandle;
         self.startDrawIndex = self.startDrawIndex + offset;
     }
-    NSLog(@"dataCount --- %ld - startIndex ---- %ld -- offset --- %ld countShow -- %ld", self.dataArray.count, self.startDrawIndex, offset, self.countOfShowCandle);
     [self setNeedsDisplay];
     self.lastPinScale = sender.scale;
 }
@@ -659,7 +658,6 @@ typedef NS_ENUM(NSInteger, YBStockState){
     if (startDrawIndex < 0 || self.countOfShowCandle >= self.dataArray.count) {
         startDrawIndex = 0;
     }
-    NSLog(@"%ld", startDrawIndex);
     _startDrawIndex = startDrawIndex;
 }
 

@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    // 返回按钮
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     backBtn.frame = CGRectMake(20, [UIScreen mainScreen].bounds.size.height - 70, 50, 50);
     backBtn.backgroundColor = [UIColor cyanColor];
@@ -31,20 +31,23 @@
     backBtn.layer.cornerRadius = 25;
     [backBtn addTarget:self action:@selector(handleBackBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backBtn];
-    
+    // 分段控制器
     UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[@"分时", @"五日", @"日K"]];
     segmentControl.frame = CGRectMake(20, 50, [UIScreen mainScreen].bounds.size.width-40, 40);
     segmentControl.selectedSegmentIndex = 0;
     [segmentControl addTarget:self action:@selector(handleSegmentControlAction:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:segmentControl];
     
-    
+    // 添加K线图视图
     [self stockChartViewTest];
+    // 添加分时图
     [self stockChartTimeViewTest];
+    // 添加五日视图
     [self stockFiveDayViewTest];
     
 }
 
+#pragma mark - 用户交互
 - (void)handleBackBtnAction:(UIButton *)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -72,12 +75,13 @@
 #pragma mark - 股票视图
 - (void)stockChartViewTest
 {
+    // 初始化视图
     self.stockChartView = [[YBStockChartView alloc] initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, 300)];
     self.stockChartView.prop = 0.7;
     self.stockChartView.delegate = self;
     self.stockChartView.padding = UIEdgeInsetsMake(10, 10, 0, 10);
     [self.view addSubview:self.stockChartView];
-    
+
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 初始化模型数组
         NSMutableArray *modelArray = [NSMutableArray array];
@@ -87,6 +91,7 @@
         for (int i = 0; i < array.count; i ++) {
             NSArray *tempArr = array[i];
             YBStockChartModel *model = [[YBStockChartModel alloc] init];
+            // 对模型进行赋值
             model.open = [tempArr[1] doubleValue]; // 开盘价
             model.close = [tempArr[2] doubleValue];// 收盘价
             model.high = [tempArr[3] doubleValue]; // 最高价
@@ -269,15 +274,15 @@
 
 #pragma mark - delegate
 - (void)longPressStockChartView:(YBStockChartView *)chartView currentEntityModel:(YBStockChartModel *)entityModel entityModelIndex:(NSInteger)entityModelIndex {
-    NSLog(@"长按K线视图");
+    NSLog(@"date = %@ | open = %.1f | close = %.1f | high = %.1f | low = %.1f | volume = %ld", entityModel.date, entityModel.open, entityModel.close, entityModel.high, entityModel.low, entityModel.volume);
 }
 
 - (void)longPressStockTimeView:(YBStockTimeView *)chartView currentEntityModel:(YBStockTimeModel *)entityModel entityModelIndex:(NSInteger)entityModelIndex {
-    NSLog(@"长按分时视图");
+    NSLog(@"time = %@ | price = %.1f | volume = %ld | avgPrice = %.1f", entityModel.time, entityModel.price, entityModel.volume, entityModel.avgPrice);
 }
 
 - (void)longPressStockFiveDayView:(YBStockFiveDayView *)chartView currentEntityModel:(YBStockFiveDayModel *)entityModel entityModelIndexPath:(NSIndexPath *)entityModelIndexPath {
-    NSLog(@"长按五日视图");
+    NSLog(@"date = %@ | time = %@ | price = %.1f | volume = %ld | avgPrice = %.1f", entityModel.date, entityModel.time, entityModel.price, entityModel.volume, entityModel.avgPrice);
 }
 
 @end
