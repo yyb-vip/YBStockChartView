@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4136F81DBCFB05007D933B /* YBStockFiveDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4136F71DBCFB05007D933B /* YBStockFiveDayView.m */; };
+		1F415A7B1DAD356E003F6148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415A7A1DAD356E003F6148 /* main.m */; };
+		1F415A7E1DAD356E003F6148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415A7D1DAD356E003F6148 /* AppDelegate.m */; };
+		1F415A861DAD356E003F6148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F415A851DAD356E003F6148 /* Assets.xcassets */; };
+		1F415A891DAD356E003F6148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F415A871DAD356E003F6148 /* LaunchScreen.storyboard */; };
+		1F415A941DAD356E003F6148 /* YBStockChartViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415A931DAD356E003F6148 /* YBStockChartViewTests.m */; };
+		1F415A9F1DAD356E003F6148 /* YBStockChartViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415A9E1DAD356E003F6148 /* YBStockChartViewUITests.m */; };
+		1F415AAF1DAD35AB003F6148 /* StockChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415AAE1DAD35AB003F6148 /* StockChartViewController.m */; };
+		1F415AB21DAD360A003F6148 /* YBStockChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415AB11DAD360A003F6148 /* YBStockChartView.m */; };
+		1F54FFB21DBBC0B4009D0FCB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54FFB11DBBC0B4009D0FCB /* RootViewController.m */; };
+		1F54FFBB1DBBC4D6009D0FCB /* ListTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54FFBA1DBBC4D6009D0FCB /* ListTableViewHeaderView.m */; };
+		1F54FFBD1DBBC4E0009D0FCB /* ListTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F54FFBC1DBBC4E0009D0FCB /* ListTableViewHeaderView.xib */; };
+		1FBBC1F11DCEE82E0025B718 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBC1F01DCEE82E0025B718 /* CustomView.m */; };
+		1FBBC1F31DCEE95F0025B718 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBBC1F21DCEE95F0025B718 /* CustomView.xib */; };
+		69DB3EC71DB8544200AC9409 /* YBStockTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DB3EC61DB8544200AC9409 /* YBStockTimeView.m */; };
+		69DB3ED41DB86FF900AC9409 /* YBStockChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DB3ED31DB86FF900AC9409 /* YBStockChartModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F415A901DAD356E003F6148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F415A6E1DAD356D003F6148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F415A751DAD356D003F6148;
+			remoteInfo = YBStockChartView;
+		};
+		1F415A9B1DAD356E003F6148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F415A6E1DAD356D003F6148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F415A751DAD356D003F6148;
+			remoteInfo = YBStockChartView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F4136F61DBCFB05007D933B /* YBStockFiveDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBStockFiveDayView.h; sourceTree = "<group>"; };
+		1F4136F71DBCFB05007D933B /* YBStockFiveDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBStockFiveDayView.m; sourceTree = "<group>"; };
+		1F415A761DAD356D003F6148 /* YBStockChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBStockChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F415A7A1DAD356E003F6148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F415A7C1DAD356E003F6148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F415A7D1DAD356E003F6148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F415A851DAD356E003F6148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F415A881DAD356E003F6148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F415A8A1DAD356E003F6148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F415A8F1DAD356E003F6148 /* YBStockChartViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBStockChartViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F415A931DAD356E003F6148 /* YBStockChartViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBStockChartViewTests.m; sourceTree = "<group>"; };
+		1F415A951DAD356E003F6148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F415A9A1DAD356E003F6148 /* YBStockChartViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBStockChartViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F415A9E1DAD356E003F6148 /* YBStockChartViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBStockChartViewUITests.m; sourceTree = "<group>"; };
+		1F415AA01DAD356E003F6148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F415AAD1DAD35AB003F6148 /* StockChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockChartViewController.h; sourceTree = "<group>"; };
+		1F415AAE1DAD35AB003F6148 /* StockChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockChartViewController.m; sourceTree = "<group>"; };
+		1F415AB01DAD360A003F6148 /* YBStockChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBStockChartView.h; sourceTree = "<group>"; };
+		1F415AB11DAD360A003F6148 /* YBStockChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBStockChartView.m; sourceTree = "<group>"; };
+		1F54FFB01DBBC0B4009D0FCB /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1F54FFB11DBBC0B4009D0FCB /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1F54FFB91DBBC4D6009D0FCB /* ListTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewHeaderView.h; sourceTree = "<group>"; };
+		1F54FFBA1DBBC4D6009D0FCB /* ListTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewHeaderView.m; sourceTree = "<group>"; };
+		1F54FFBC1DBBC4E0009D0FCB /* ListTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewHeaderView.xib; sourceTree = "<group>"; };
+		1FBBC1EF1DCEE82E0025B718 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		1FBBC1F01DCEE82E0025B718 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		1FBBC1F21DCEE95F0025B718 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		69DB3EC51DB8544200AC9409 /* YBStockTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBStockTimeView.h; sourceTree = "<group>"; };
+		69DB3EC61DB8544200AC9409 /* YBStockTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBStockTimeView.m; sourceTree = "<group>"; };
+		69DB3ECC1DB868B100AC9409 /* YBStockChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBStockChartModel.h; sourceTree = "<group>"; };
+		69DB3ED31DB86FF900AC9409 /* YBStockChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBStockChartModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F415A731DAD356D003F6148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A8C1DAD356E003F6148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A971DAD356E003F6148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F415A6D1DAD356D003F6148 = {
+			isa = PBXGroup;
+			children = (
+				1F415A781DAD356E003F6148 /* YBStockChartView */,
+				1F415A921DAD356E003F6148 /* YBStockChartViewTests */,
+				1F415A9D1DAD356E003F6148 /* YBStockChartViewUITests */,
+				1F415A771DAD356D003F6148 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F415A771DAD356D003F6148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F415A761DAD356D003F6148 /* YBStockChartView.app */,
+				1F415A8F1DAD356E003F6148 /* YBStockChartViewTests.xctest */,
+				1F415A9A1DAD356E003F6148 /* YBStockChartViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F415A781DAD356E003F6148 /* YBStockChartView */ = {
+			isa = PBXGroup;
+			children = (
+				1F415AAC1DAD3596003F6148 /* YBStockChartView */,
+				1F415A7C1DAD356E003F6148 /* AppDelegate.h */,
+				1F415A7D1DAD356E003F6148 /* AppDelegate.m */,
+				1F54FFB01DBBC0B4009D0FCB /* RootViewController.h */,
+				1F54FFB11DBBC0B4009D0FCB /* RootViewController.m */,
+				1F54FFB91DBBC4D6009D0FCB /* ListTableViewHeaderView.h */,
+				1F54FFBA1DBBC4D6009D0FCB /* ListTableViewHeaderView.m */,
+				1F54FFBC1DBBC4E0009D0FCB /* ListTableViewHeaderView.xib */,
+				1F415AAD1DAD35AB003F6148 /* StockChartViewController.h */,
+				1F415AAE1DAD35AB003F6148 /* StockChartViewController.m */,
+				1FBBC1EF1DCEE82E0025B718 /* CustomView.h */,
+				1FBBC1F01DCEE82E0025B718 /* CustomView.m */,
+				1FBBC1F21DCEE95F0025B718 /* CustomView.xib */,
+				1F415A851DAD356E003F6148 /* Assets.xcassets */,
+				1F415A871DAD356E003F6148 /* LaunchScreen.storyboard */,
+				1F415A8A1DAD356E003F6148 /* Info.plist */,
+				1F415A791DAD356E003F6148 /* Supporting Files */,
+			);
+			path = YBStockChartView;
+			sourceTree = "<group>";
+		};
+		1F415A791DAD356E003F6148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F415A7A1DAD356E003F6148 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F415A921DAD356E003F6148 /* YBStockChartViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F415A931DAD356E003F6148 /* YBStockChartViewTests.m */,
+				1F415A951DAD356E003F6148 /* Info.plist */,
+			);
+			path = YBStockChartViewTests;
+			sourceTree = "<group>";
+		};
+		1F415A9D1DAD356E003F6148 /* YBStockChartViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F415A9E1DAD356E003F6148 /* YBStockChartViewUITests.m */,
+				1F415AA01DAD356E003F6148 /* Info.plist */,
+			);
+			path = YBStockChartViewUITests;
+			sourceTree = "<group>";
+		};
+		1F415AAC1DAD3596003F6148 /* YBStockChartView */ = {
+			isa = PBXGroup;
+			children = (
+				1F415AB01DAD360A003F6148 /* YBStockChartView.h */,
+				1F415AB11DAD360A003F6148 /* YBStockChartView.m */,
+				69DB3EC51DB8544200AC9409 /* YBStockTimeView.h */,
+				69DB3EC61DB8544200AC9409 /* YBStockTimeView.m */,
+				1F4136F61DBCFB05007D933B /* YBStockFiveDayView.h */,
+				1F4136F71DBCFB05007D933B /* YBStockFiveDayView.m */,
+				69DB3ECC1DB868B100AC9409 /* YBStockChartModel.h */,
+				69DB3ED31DB86FF900AC9409 /* YBStockChartModel.m */,
+			);
+			path = YBStockChartView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F415A751DAD356D003F6148 /* YBStockChartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F415AA31DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartView" */;
+			buildPhases = (
+				1F415A721DAD356D003F6148 /* Sources */,
+				1F415A731DAD356D003F6148 /* Frameworks */,
+				1F415A741DAD356D003F6148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YBStockChartView;
+			productName = YBStockChartView;
+			productReference = 1F415A761DAD356D003F6148 /* YBStockChartView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F415A8E1DAD356E003F6148 /* YBStockChartViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F415AA61DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartViewTests" */;
+			buildPhases = (
+				1F415A8B1DAD356E003F6148 /* Sources */,
+				1F415A8C1DAD356E003F6148 /* Frameworks */,
+				1F415A8D1DAD356E003F6148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F415A911DAD356E003F6148 /* PBXTargetDependency */,
+			);
+			name = YBStockChartViewTests;
+			productName = YBStockChartViewTests;
+			productReference = 1F415A8F1DAD356E003F6148 /* YBStockChartViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F415A991DAD356E003F6148 /* YBStockChartViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F415AA91DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartViewUITests" */;
+			buildPhases = (
+				1F415A961DAD356E003F6148 /* Sources */,
+				1F415A971DAD356E003F6148 /* Frameworks */,
+				1F415A981DAD356E003F6148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F415A9C1DAD356E003F6148 /* PBXTargetDependency */,
+			);
+			name = YBStockChartViewUITests;
+			productName = YBStockChartViewUITests;
+			productReference = 1F415A9A1DAD356E003F6148 /* YBStockChartViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F415A6E1DAD356D003F6148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = YYB;
+				TargetAttributes = {
+					1F415A751DAD356D003F6148 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DWR7UAB7LZ;
+					};
+					1F415A8E1DAD356E003F6148 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1F415A751DAD356D003F6148;
+					};
+					1F415A991DAD356E003F6148 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1F415A751DAD356D003F6148;
+					};
+				};
+			};
+			buildConfigurationList = 1F415A711DAD356D003F6148 /* Build configuration list for PBXProject "YBStockChartView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F415A6D1DAD356D003F6148;
+			productRefGroup = 1F415A771DAD356D003F6148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F415A751DAD356D003F6148 /* YBStockChartView */,
+				1F415A8E1DAD356E003F6148 /* YBStockChartViewTests */,
+				1F415A991DAD356E003F6148 /* YBStockChartViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F415A741DAD356D003F6148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F415A891DAD356E003F6148 /* LaunchScreen.storyboard in Resources */,
+				1FBBC1F31DCEE95F0025B718 /* CustomView.xib in Resources */,
+				1F54FFBD1DBBC4E0009D0FCB /* ListTableViewHeaderView.xib in Resources */,
+				1F415A861DAD356E003F6148 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A8D1DAD356E003F6148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A981DAD356E003F6148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F415A721DAD356D003F6148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F415A7E1DAD356E003F6148 /* AppDelegate.m in Sources */,
+				1F54FFB21DBBC0B4009D0FCB /* RootViewController.m in Sources */,
+				1F415AB21DAD360A003F6148 /* YBStockChartView.m in Sources */,
+				69DB3ED41DB86FF900AC9409 /* YBStockChartModel.m in Sources */,
+				1F415A7B1DAD356E003F6148 /* main.m in Sources */,
+				1FBBC1F11DCEE82E0025B718 /* CustomView.m in Sources */,
+				1F415AAF1DAD35AB003F6148 /* StockChartViewController.m in Sources */,
+				69DB3EC71DB8544200AC9409 /* YBStockTimeView.m in Sources */,
+				1F4136F81DBCFB05007D933B /* YBStockFiveDayView.m in Sources */,
+				1F54FFBB1DBBC4D6009D0FCB /* ListTableViewHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A8B1DAD356E003F6148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F415A941DAD356E003F6148 /* YBStockChartViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F415A961DAD356E003F6148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F415A9F1DAD356E003F6148 /* YBStockChartViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F415A911DAD356E003F6148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F415A751DAD356D003F6148 /* YBStockChartView */;
+			targetProxy = 1F415A901DAD356E003F6148 /* PBXContainerItemProxy */;
+		};
+		1F415A9C1DAD356E003F6148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F415A751DAD356D003F6148 /* YBStockChartView */;
+			targetProxy = 1F415A9B1DAD356E003F6148 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F415A871DAD356E003F6148 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F415A881DAD356E003F6148 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F415AA11DAD356E003F6148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F415AA21DAD356E003F6148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F415AA41DAD356E003F6148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = YBStockChartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1F415AA51DAD356E003F6148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = YBStockChartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		1F415AA71DAD356E003F6148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YBStockChartViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBStockChartView.app/YBStockChartView";
+			};
+			name = Debug;
+		};
+		1F415AA81DAD356E003F6148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YBStockChartViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBStockChartView.app/YBStockChartView";
+			};
+			name = Release;
+		};
+		1F415AAA1DAD356E003F6148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YBStockChartViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YBStockChartView;
+			};
+			name = Debug;
+		};
+		1F415AAB1DAD356E003F6148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YBStockChartViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyb.YBStockChartViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YBStockChartView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F415A711DAD356D003F6148 /* Build configuration list for PBXProject "YBStockChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F415AA11DAD356E003F6148 /* Debug */,
+				1F415AA21DAD356E003F6148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F415AA31DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F415AA41DAD356E003F6148 /* Debug */,
+				1F415AA51DAD356E003F6148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F415AA61DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F415AA71DAD356E003F6148 /* Debug */,
+				1F415AA81DAD356E003F6148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F415AA91DAD356E003F6148 /* Build configuration list for PBXNativeTarget "YBStockChartViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F415AAA1DAD356E003F6148 /* Debug */,
+				1F415AAB1DAD356E003F6148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F415A6E1DAD356D003F6148 /* Project object */;
+}
