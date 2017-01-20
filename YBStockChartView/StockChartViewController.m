@@ -263,6 +263,7 @@
         [dataArray addObject:addArray];
     }
     _stockFiveDayView.dataArray = dataArray;
+   
     [_stockFiveDayView setNeedsDisplay];
 }
 

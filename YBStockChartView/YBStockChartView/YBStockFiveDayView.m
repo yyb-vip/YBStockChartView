@@ -193,7 +193,8 @@
         NSString *dateStr = self.dataArray[i].firstObject.date;
         NSMutableAttributedString *dateAttributedStr = [[NSMutableAttributedString alloc] initWithString:dateStr];
         [dateAttributedStr setAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.defaultTextSize],NSForegroundColorAttributeName:self.lineColor, NSParagraphStyleAttributeName:style} range:NSMakeRange(0, dateAttributedStr.length)];
-        CGRect dateRect = CGRectMake(self.padding.left + i * lineMargen, self.bounds.size.height - self.padding.bottom - dateAttributedStr.size.height - 1, lineMargen, dateAttributedStr.size.height);
+        NSInteger index = self.dataArray.count == 5 ? i : (4 - i);
+        CGRect dateRect = CGRectMake(self.padding.left + index * lineMargen, self.bounds.size.height - self.padding.bottom - dateAttributedStr.size.height - 1, lineMargen, dateAttributedStr.size.height);
         [dateAttributedStr drawInRect:dateRect];
     }
 }
