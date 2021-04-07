@@ -24,4 +24,4 @@ self.stockChartView.dataArray = modelArray; // 赋值
 
 ## 效果图
 
-![效果图.gif](https://github.com/YangYiBo23/YBStockChartView/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
+![效果图.gif](http://upload-images.jianshu.io/upload_images/2887144-6f2410310de3f681.gif?imageMogr2/auto-orient/strip)
