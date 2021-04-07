@@ -1,5 +1,8 @@
 # YBStockChartView
 
+### 效果图
+<div align=center><img src="http://upload-images.jianshu.io/upload_images/2887144-6f2410310de3f681.gif?imageMogr2/auto-orient/strip"/></div>
+
 ### 注: 因为用的是新浪的接口, 在每天09:30之前demo会因为对新浪的数据处理不合理会crash
 
 ### 初始化K线图, 分时图和五日视图初始化方式差不多
@@ -20,8 +23,3 @@ self.stockChartView.dataArray = modelArray; // 赋值
 
 ```
 
-
-
-## 效果图
-
-![效果图.gif](http://upload-images.jianshu.io/upload_images/2887144-6f2410310de3f681.gif?imageMogr2/auto-orient/strip)
